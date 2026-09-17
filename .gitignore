@@ -1,0 +1,46 @@
+# Media never goes to GitHub (samples/ has its own ignore too)
+*.mp4
+*.m4v
+*.mkv
+*.mov
+*.m2ts
+*.mts
+*.vob
+*.ifo
+*.bup
+*.iso
+*.avi
+*.ts
+*.webm
+*.mp3
+*.aac
+*.ac3
+*.flac
+*.wav
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Claude Code local-only settings
+.claude/settings.local.json

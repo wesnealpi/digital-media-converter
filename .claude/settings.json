@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git status:*)",
+      "PowerShell(git diff:*)",
+      "PowerShell(git log:*)",
+      "PowerShell(git branch:*)",
+      "PowerShell(git remote -v)",
+      "PowerShell(git remote get-url:*)",
+      "PowerShell(git config --get:*)",
+      "PowerShell(git config --local --get:*)",
+      "PowerShell(git config --list:*)",
+      "PowerShell(git fetch:*)",
+      "PowerShell(git show:*)",
+      "PowerShell(git rev-parse:*)",
+      "PowerShell(powershell -NoProfile -File .claude/skills/git-account/scripts/Get-GitAccount.ps1:*)",
+      "PowerShell(ffprobe:*)",
+      "PowerShell(ffmpeg -version)"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+# Sample media lives here locally and is never committed.
+# Everything is ignored except this file and the README.
+*
+!.gitignore
+!README.md
