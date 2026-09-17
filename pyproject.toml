@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dmc"
+version = "0.1.0"
+description = "Digital media converter: classify DVD/Blu-ray/phone sources and encode them with HandBrake to H.265 for Plex."
+requires-python = ">=3.13"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+dmc = "dmc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "samples: needs real media under samples/ (skipped when absent)",
+    "tools: needs ffprobe/HandBrakeCLI on PATH (skipped when absent)",
+]
